@@ -6,15 +6,19 @@ using System.Threading.Tasks;
 
 namespace c0731902
 {
-    class Program
+    class Countryside
     {
-        static void Main(string[] args)
-        {
-        }
+
     }
-    class Node
+
+
+    class Village
     {
-        Node PreviousNode;
-        Node NextNode;
+        Village PreviousVillage;
+        Village NextVillage;
+        String VillageName;
+        bool isAstrildeHere = false;
+        public Village() { }
+
     }
 }
