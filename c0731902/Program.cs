@@ -12,4 +12,9 @@ namespace c0731902
         {
         }
     }
+    class Node
+    {
+        Node PreviousNode;
+        Node NextNode;
+    }
 }
