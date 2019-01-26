@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace c0731902
+{
     class Program
     {
         static void Main(string[] args)
@@ -19,9 +20,12 @@ namespace c0731902
         public void InitializeMap()
         {
             Alst = new village();
+            Alst.VillageName = "Alst";
             Maeland = new village();
+            Maeland.VillageName = "Maeland";
             Maeland.isAstrildHere = true;
-            village Schenig = new village();
+            Schenig = new village();
+            Schenig.VillageName = "Schenig";
 
             Alst.NextVillage = Maeland;
             Maeland.NextVillage = Schenig;
@@ -29,7 +33,9 @@ namespace c0731902
         }
         public void WalkAround()
         {
-            village InitialVillage = this.Maeland;
+            village CurrentVillage = this.Maeland;
+            village NextVillage;
+            NextVillage = CurrentVillage.NextVillage;
         }
 
     }
@@ -46,3 +52,6 @@ namespace c0731902
 
 
     }
+
+
+}
